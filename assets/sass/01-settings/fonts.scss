@@ -1,0 +1,29 @@
+// Do we need to serve a font? Add the @font-face styles here.
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('ApercuPro-Bold.eot');
+  src: local('Apercu Pro Bold'), local('ApercuPro-Bold'),
+      url('ApercuPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('ApercuPro-Bold.woff2') format('woff2'),
+      url('ApercuPro-Bold.woff') format('woff'),
+      url('ApercuPro-Bold.ttf') format('truetype'),
+      url('ApercuPro-Bold.svg#ApercuPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fugue';
+  src: url('Fugue-Regular.eot');
+  src: local('Fugue Regular'), local('Fugue-Regular'),
+      url('Fugue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Fugue-Regular.woff2') format('woff2'),
+      url('Fugue-Regular.woff') format('woff'),
+      url('Fugue-Regular.ttf') format('truetype'),
+      url('Fugue-Regular.svg#Fugue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

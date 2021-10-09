@@ -1,0 +1,440 @@
+
+//team
+
+.team {
+  margin-bottom: 50px;
+
+  &-pub {
+    width: 100%;
+    // padding: 50px 0;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+    &-wrapper {
+      display: block;
+      width: 100%;
+      @media only screen and (max-width: 767px) {
+        display: block;
+        width: 100%;
+      }
+    }
+    &__card {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: 767px) {
+        display: block;
+        max-width: 100%;
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 90%;
+      }
+
+      &-wrapper {
+        width: 25%;
+        flex-basis: auto;
+
+
+
+      }
+
+      &-title {
+        font-size: 17px;
+        font-weight: 500;
+        // color: $secondary;
+
+        &-container {
+          border-radius: 5px 5px 0 0;
+          box-shadow: 0 2px 7px 0 rgba(189, 189, 189, 0.3);
+          border: solid 1px #e4eaf4;
+          background-color: #fff;
+          // padding: 15px 0 15px 15px;
+        }
+      }
+
+      &-bottom-wrapper {
+
+        padding: 15px 0 15px 15px;
+
+        p {
+          margin-bottom: 0;
+
+          &:nth-child(3) {
+            font-weight: 300;
+            font-style: italic;
+          }
+        }
+      }
+
+      &-country {
+        font-size: 16px;
+        font-weight: 500;
+        // color: $primary;
+
+        span {
+          width: 68px;
+          height: 20px;
+          background-color: #c9e7df;
+          float: right;
+
+          @media only screen and (max-width: 767px) {
+            width: 30%;
+          }
+        }
+      }
+      &-download-btn {
+        float: right;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.68;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 10px 30px;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px 0px inset;
+        background: linear-gradient(
+            to right,
+            rgb(0, 32, 96) 50%,
+            rgb(0, 141, 106) 50%
+          )
+          right bottom / 200% 100%;
+        transition: all 0.9s ease-out 0s;
+        margin-top: -28px;
+        margin-right: 12px;
+        padding: 4px 8px;
+
+        @media only screen and (max-width: 1023px) {
+          padding: 4px 8px;
+          font-size: 12px;
+        }
+        &:hover {
+          // background-color: $secondary;
+          background-position: left bottom;
+        }
+        > a {
+          color: #fff;
+        }
+      }
+
+      &-position {
+        font-size: 16px;
+        color: #4e6083;
+      }
+
+      &-img {
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-btn {
+        // background-color: $secondary;
+        display: flex;
+        padding: 10px 15px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-txt {
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff;
+        }
+
+        &-icon {
+          margin-left: auto;
+
+          img {
+            width: 21px;
+            height: 12px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    &__modal-download-btn {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.68;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      padding: 10px 30px;
+      border-radius: 3px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px 0px inset;
+      background: linear-gradient(
+          to right,
+          rgb(0, 32, 96) 50%,
+          rgb(0, 141, 106) 50%
+        )
+        right bottom / 200% 100%;
+      transition: all 0.9s ease-out 0s;
+      padding: 4px 8px;
+      width: 85px;
+
+      @media only screen and (max-width: 1023px) {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+      &:hover {
+        // background-color: $secondary;
+        background-position: left bottom;
+      }
+      > a {
+        color: #fff;
+      }
+    }
+    &__modal {
+      display: flex;
+
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+
+      &-left {
+        width: 50%;
+
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+        }
+      }
+
+      &-right {
+        width: 50%;
+        padding-left: 40px;
+        height: 100%;
+
+        @media screen and (min-width: 1800px) {
+          padding-left: 0;
+          margin-left: -50px;
+        }
+
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+
+      &-country {
+        font-size: 28px;
+        font-weight: 500;
+
+
+        &-label {
+          font-weight: 300;
+          font-style: italic;
+          margin: 30px 0 5px 0;
+        }
+      }
+
+      &-tagline {
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      &-title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.31;
+        // color: $secondary;
+        margin-top: 30px;
+
+        @media only screen and (max-width: 767px) {
+          font-size: 24px;
+        }
+      }
+
+      &-period {
+        margin: 30px 0 10px 0;
+        font-size: 20px;
+
+        span {
+          width: 108px;
+          height: 28px;
+          background-color: #c9e7df;
+          float: right;
+
+          @media only screen and (max-width: 767px) {
+            width: 30%;
+          }
+        }
+      }
+
+      &-position {
+        font-size: 16px;
+        color: #4e6083;
+      }
+
+      &-img {
+        @media only screen and (max-width: 767px) {
+          margin-left: 0;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          margin-left: 0;
+        }
+
+        img {
+          width: 511px;
+          height: 340px;
+          object-fit: cover;
+
+          @media only screen and (max-width: 767px) {
+            height: 260px;
+          }
+
+          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+          }
+        }
+      }
+
+      &-description {
+        margin-top: 30px;
+        height: 250px;
+        overflow: auto;
+
+        @media only screen and (max-width: 767px) {
+          height: 200px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          height: 180px;
+        }
+
+        a {
+          font-weight: 500;
+          color: #002060;
+        }
+        span {
+          color: #008d6a;
+          font-weight: 500;
+        }
+
+        ul {
+          margin: 0 0 0 30px;
+          font-size: 16px;
+          line-height: 1.75;
+          // color: $paragraph;
+          list-style: disc;
+
+          @media only screen and (max-width: 767px) {
+            margin: 0 0 0 20px;
+          }
+        }
+      }
+
+      &-btn {
+        margin-top: 30px;
+
+        a {
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 1.53;
+          text-align: center;
+          color: #fff;
+          padding: 10px 30px;
+          border-radius: 3px;
+          box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.1);
+          // background: linear-gradient(to right, $primary 50%, $secondary 50%);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          transition: all 0.9s ease-out;
+          float: right;
+
+          &:hover {
+            // background-color: $primary;
+            background-position: left bottom;
+          }
+        }
+      }
+    }
+
+    &__filter {
+      margin: 0 auto;
+      padding: 0;
+      margin-bottom: 50px;
+      margin-left: 10px;
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        overflow: inherit;
+      }
+
+      &-container {
+        width: 100%;
+        display: flex;
+
+      }
+
+      &-title {
+        font-size: 16px;
+        line-height: 1.75;
+        margin-right: 0;
+      }
+
+      p {
+       font-weight: bold;
+       font-size: 14px;
+       color: #fff;
+       font-family: "Apercu Pro" !important ;
+       text-transform: uppercase;
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          padding: 0 10px;
+          margin: 0 10px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: underline;
+          color: #16EB96;
+        }
+      }
+
+      a {
+        user-select: none;
+        outline: none;
+        display: inline-block;
+        padding: 0 35px 0 0;
+      }
+      a.selected{
+        text-decoration: underline;
+        color: #16EB96;
+        p {
+          color: #16EB96;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  max-width: 70%;
+  box-sizing: border-box;
+  width: 90%;
+  background: #fff;
+  padding: 45px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  text-align: left;
+
+  @media only screen and (max-width: 767px) {
+    max-width: 100%;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    max-width: 100%;
+    padding: 30px 20px;
+    width: 100%;
+  }
+}
