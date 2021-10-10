@@ -78,7 +78,11 @@ class My_Widget_1 extends Widget_Base
 									<img src="<?php echo the_field('image'); ?>" alt=""></img>
 								</div>
 								<div class="team-pub__card-bottom-wrapper">
-									<p><?php echo the_field('title'); ?></p>
+									<p><?php echo the_field('full_name'); ?></p>
+									<p><?php echo the_field('role'); ?></p>
+									<p><?php echo the_field('description'); ?></p>
+
+									<a>Show more</a>
 								</div>
 
 							</div> <!-- end item -->

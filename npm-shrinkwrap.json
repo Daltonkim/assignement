@@ -8,6 +8,9 @@
 			"name": "twentytwentyone",
 			"version": "1.4.0",
 			"license": "GPL-2.0-or-later",
+			"dependencies": {
+				"postcss-ignore-plugin": "^0.2.1"
+			},
 			"devDependencies": {
 				"@wordpress/browserslist-config": "^4.0.1",
 				"@wordpress/eslint-plugin": "^9.0.6",
@@ -4882,8 +4885,7 @@
 		"node_modules/picocolors": {
 			"version": "0.2.1",
 			"resolved": "https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz",
-			"integrity": "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==",
-			"dev": true
+			"integrity": "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA=="
 		},
 		"node_modules/picomatch": {
 			"version": "2.3.0",
@@ -5426,6 +5428,38 @@
 			},
 			"engines": {
 				"node": ">= 6"
+			}
+		},
+		"node_modules/postcss-ignore-plugin": {
+			"version": "0.2.1",
+			"resolved": "https://registry.npmjs.org/postcss-ignore-plugin/-/postcss-ignore-plugin-0.2.1.tgz",
+			"integrity": "sha512-J1TOhLMPpLdzdIcMrR9hepwPqsQhwMuZ60VeG+Crq4mSqU5UZysWcA90q74z0C1mqbmLtQ0gMoIo9UCcmD99DQ==",
+			"dependencies": {
+				"postcss": "^7.0.16"
+			}
+		},
+		"node_modules/postcss-ignore-plugin/node_modules/postcss": {
+			"version": "7.0.39",
+			"resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz",
+			"integrity": "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==",
+			"dependencies": {
+				"picocolors": "^0.2.1",
+				"source-map": "^0.6.1"
+			},
+			"engines": {
+				"node": ">=6.0.0"
+			},
+			"funding": {
+				"type": "opencollective",
+				"url": "https://opencollective.com/postcss/"
+			}
+		},
+		"node_modules/postcss-ignore-plugin/node_modules/source-map": {
+			"version": "0.6.1",
+			"resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
+			"integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
+			"engines": {
+				"node": ">=0.10.0"
 			}
 		},
 		"node_modules/postcss-less": {
@@ -11069,8 +11103,7 @@
 		"picocolors": {
 			"version": "0.2.1",
 			"resolved": "https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz",
-			"integrity": "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==",
-			"dev": true
+			"integrity": "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA=="
 		},
 		"picomatch": {
 			"version": "2.3.0",
@@ -11466,6 +11499,30 @@
 						"string_decoder": "^1.1.1",
 						"util-deprecate": "^1.0.1"
 					}
+				}
+			}
+		},
+		"postcss-ignore-plugin": {
+			"version": "0.2.1",
+			"resolved": "https://registry.npmjs.org/postcss-ignore-plugin/-/postcss-ignore-plugin-0.2.1.tgz",
+			"integrity": "sha512-J1TOhLMPpLdzdIcMrR9hepwPqsQhwMuZ60VeG+Crq4mSqU5UZysWcA90q74z0C1mqbmLtQ0gMoIo9UCcmD99DQ==",
+			"requires": {
+				"postcss": "^7.0.16"
+			},
+			"dependencies": {
+				"postcss": {
+					"version": "7.0.39",
+					"resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz",
+					"integrity": "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA==",
+					"requires": {
+						"picocolors": "^0.2.1",
+						"source-map": "^0.6.1"
+					}
+				},
+				"source-map": {
+					"version": "0.6.1",
+					"resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
+					"integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g=="
 				}
 			}
 		},

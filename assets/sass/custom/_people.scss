@@ -1,0 +1,204 @@
+.people {
+  border-radius: 10px;
+  background: #fff;
+  display: block;
+  padding: 50px;
+
+  @media only screen and (max-width: 767px) {
+    display: block;
+    padding: 20px;
+  }
+
+  .slick-prev {
+    left: 100%;
+    z-index: 1;
+    &__modal-contact-owner {
+      display: flex;
+      margin: auto;
+      position: relative;
+      > p {
+        font-size: 16px;
+        margin: auto 0;
+        padding-right: 10px;
+      }
+    }
+
+    top: auto;
+
+    @media only screen and (min-width: 1280px) and (max-width: 1439px) {
+      left: 46%;
+    }
+
+    @media only screen and (max-width: 767px) {
+      left: 65%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      left: 42%;
+      bottom: 90px !important;
+    }
+
+    &::before {
+      content: url("http://wunderdogs.test/wp-content/uploads/2021/10/right-arrow.svg");
+      position: relative;
+      transform: rotate(180deg);
+      right: 0;
+
+      // targets edge browser only
+      @supports (-ms-ime-align: auto) {
+        content: url("../../images/right-arrow.svg");
+      }
+    }
+  }
+
+  .slick-next {
+    right: -49px;
+    z-index: 1;
+    top: auto;
+
+    @media only screen and (max-width: 767px) {
+      right: 10%;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      bottom: 90px !important;
+    }
+
+    &::before {
+      content: url(">");
+      position: relative;
+      left: 0;
+
+      // targets edge browser only
+      @supports (-ms-ime-align: auto) {
+        content: url(">");
+      }
+    }
+  }
+
+  .slick {
+    &-prev,
+    &-next,
+    &-dots {
+      bottom: 0;
+
+      @media only screen and (max-width: 767px) {
+        bottom: 20px;
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        bottom: 150px;
+      }
+
+      @media screen and (min-width: 1800px) {
+        bottom: 0;
+      }
+    }
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .sb-slider.slick-initialized.slick-slider {
+    @media only screen and (max-width: 767px) {
+      margin-left: 85px;
+    }
+  }
+
+  .slick-dots {
+    padding-left: 0;
+    text-align: left;
+    position: relative;
+
+    @media only screen and (max-width: 767px) {
+      padding-left: 20px;
+      bottom: 1210px;
+      display: none !important;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      padding-left: 20px;
+    }
+
+    @media screen and (min-width: 1800px) {
+      padding-left: 0;
+    }
+  }
+  &__title {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.26;
+    color: rgb(7, 72, 128);
+
+    @media only screen and (max-width: 767px) {
+      font-size: 32px;
+      line-height: 1.13;
+      text-align: center;
+    }
+  }
+
+  &__left-right {
+    display: flex !important;
+
+    @media only screen and (max-width: 767px) {
+      display: block !important;
+    }
+  }
+
+  &__left {
+    width: 15%;
+    padding: 0px;
+    margin: auto;
+
+  }
+  &__center {
+    width: 15%;
+    margin: auto;
+    padding: 0 32px;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      margin: unset;
+    }
+  }
+
+  &__right {
+    width: 70%;
+    margin-top: 50px;
+    box-shadow: 0 0 0 0 #dae2f0;
+    margin: auto;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      margin: unset;
+    }
+  }
+  &__post-name {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Apercu Pro";
+    color: #1f1f1f;
+    text-transform: uppercase;
+  }
+  &__post-title {
+    font-size: 12px;
+    font-weight: normal;
+    color: #1f1f1f;
+    padding: 5px 0 0 0;
+  }
+
+  &__featured-img {
+    z-index: 1;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+
+      @media only screen and (max-width: 767px) {
+        margin-left: 20px;
+        box-shadow: none;
+      }
+    }
+  }
+}

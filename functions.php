@@ -51,8 +51,11 @@ class Frontend
 	public function include_files()
 	{
 		include('inc/cpt/team.php');
+		include('inc/cpt/people.php');
+		include('inc/slick.php');
 		include('inc/isotope.php');
 		require_once 'custom-widgets/my-widgets.php';
+
 	}
 
 	/**

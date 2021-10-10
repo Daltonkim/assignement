@@ -11,7 +11,6 @@
 	"bugs": {
 		"url": "https://core.trac.wordpress.org/"
 	},
-	"homepage": "https://wordpress.org/themes/twentytwentyone/",
 	"devDependencies": {
 		"@wordpress/browserslist-config": "^4.0.1",
 		"@wordpress/eslint-plugin": "^9.0.6",
@@ -21,9 +20,9 @@
 		"eslint": "^7.28.0",
 		"minimist": "^1.2.2",
 		"npm-run-all": "^4.1.5",
+		"postcss": "^8.3.0",
 		"postcss-calc": "^8.0.0",
 		"postcss-cli": "^8.3.1",
-		"postcss": "^8.3.0",
 		"postcss-css-variables": "^0.18.0",
 		"postcss-custom-media": "^8.0.0",
 		"postcss-discard-duplicates": "^5.0.1",
@@ -60,10 +59,13 @@
 		"build:print": "sass assets/sass/07-utilities/print.scss:assets/css/print.css --style=expanded --source-map",
 		"build:ie": "postcss style.css -o assets/css/ie.css",
 		"build:ie-editor": "postcss assets/css/style-editor.css -o assets/css/ie-editor.css",
-		"build:stylelint": "stylelint **/*.css --fix --config .stylelintrc-css.json",
+		"build:stylelint": "stylelint assets/**/*.css --fix --config .stylelintrc-css.json",
 		"build": "run-s \"build:*\"",
 		"watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
 		"lint:scss": "stylelint **/*.scss",
 		"lint-fix:scss": "stylelint **/*.scss --fix"
+	},
+	"dependencies": {
+		"postcss-ignore-plugin": "^0.2.1"
 	}
 }
