@@ -10,20 +10,13 @@
   }
 
   .slick-prev {
-    left: 100%;
+    left: 97.1%;
     z-index: 1;
-    &__modal-contact-owner {
-      display: flex;
-      margin: auto;
-      position: relative;
-      > p {
-        font-size: 16px;
-        margin: auto 0;
-        padding-right: 10px;
-      }
-    }
-
-    top: auto;
+    padding: 18px 22px;
+    top: 113%;
+    border-radius: 10px 0 0 0;
+    box-shadow: none;
+    background-color: #16eb96 !important;
 
     @media only screen and (min-width: 1280px) and (max-width: 1439px) {
       left: 46%;
@@ -39,22 +32,27 @@
     }
 
     &::before {
-      content: url("http://wunderdogs.test/wp-content/uploads/2021/10/right-arrow.svg");
-      position: relative;
+      content: url("../../themes/wunderdogs/assets/images/right-arrow.svg");
       transform: rotate(180deg);
+      position: absolute;
       right: 0;
-
-      // targets edge browser only
-      @supports (-ms-ime-align: auto) {
-        content: url("../../images/right-arrow.svg");
-      }
+      z-index: 9999999999999;
+      width: 18px;
+      top: 6px;
+      left: 10px;
     }
   }
 
   .slick-next {
     right: -49px;
     z-index: 1;
-    top: auto;
+    top: 113%;
+    position: absolute;
+    bottom: -68px;
+    box-shadow: none;
+    padding: 18px 22px;
+    border-radius: 0 0 10px 0;
+    background-color: #16eb96 !important;
 
     @media only screen and (max-width: 767px) {
       right: 10%;
@@ -65,10 +63,14 @@
     }
 
     &::before {
-      content: url(">");
-      position: relative;
-      left: 0;
-
+      content: url("../../themes/wunderdogs/assets/images/right-arrow.svg");
+      position: absolute;
+      right: 0;
+      z-index: 9999999999999;
+      width: 18px;
+      color: #16eb96;
+      top: 9px;
+      left: 12px;
       // targets edge browser only
       @supports (-ms-ime-align: auto) {
         content: url(">");
@@ -108,38 +110,22 @@
 
   .slick-dots {
     padding-left: 0;
-    text-align: left;
+    text-align: center;
     position: relative;
 
-    @media only screen and (max-width: 767px) {
-      padding-left: 20px;
-      bottom: 1210px;
-      display: none !important;
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      padding-left: 20px;
-    }
-
-    @media screen and (min-width: 1800px) {
+    @media only screen and (max-width: 1024px) {
       padding-left: 0;
+      bottom: -61px;
+      z-index: 999999999999999999;
     }
-  }
-  &__title {
-    font-size: 46px;
-    font-weight: bold;
-    line-height: 1.26;
-    color: rgb(7, 72, 128);
-
-    @media only screen and (max-width: 767px) {
-      font-size: 32px;
-      line-height: 1.13;
-      text-align: center;
+    li.slick-active > button {
+      background-color: #16eb96;
     }
   }
 
   &__left-right {
     display: flex !important;
+    cursor: pointer;
 
     @media only screen and (max-width: 767px) {
       display: block !important;
@@ -150,16 +136,21 @@
     width: 15%;
     padding: 0px;
     margin: auto;
-
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
   }
   &__center {
     width: 15%;
     margin: auto;
     padding: 0 32px;
-
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
     @media only screen and (max-width: 767px) {
       width: 100%;
       margin: unset;
+      padding: 10px 0;
     }
   }
 
@@ -168,7 +159,9 @@
     margin-top: 50px;
     box-shadow: 0 0 0 0 #dae2f0;
     margin: auto;
-
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
     @media only screen and (max-width: 767px) {
       width: 100%;
       margin: unset;
@@ -182,8 +175,9 @@
     text-transform: uppercase;
   }
   &__post-title {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
+    font-family: "Fugue";
     color: #1f1f1f;
     padding: 5px 0 0 0;
   }
@@ -196,9 +190,50 @@
       object-fit: cover;
 
       @media only screen and (max-width: 767px) {
-        margin-left: 20px;
         box-shadow: none;
       }
     }
   }
+}
+
+.people_divider {
+  height: 1px;
+  width: 91px;
+  background: #1f1f1f;
+  margin: 10px 0;
+}
+button.slick-next.slick-arrow {
+  background-color: #16eb96;
+}
+.elementor-button-text {
+  font-family: "Apercu Pro" !important;
+}
+
+#stubborn_image > img {
+  width: 1024px !important;
+}
+
+#lets_talk {
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#lets_talk:hover {
+  cursor: pointer;
+  > img svg{
+    fill: #16eb96;
+  }
+}
+
+#lets_talk.show {
+  opacity: 1;
+  visibility: visible;
 }

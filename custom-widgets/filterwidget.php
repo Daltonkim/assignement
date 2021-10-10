@@ -74,8 +74,8 @@ class My_Widget_1 extends Widget_Base
 								<?php
 								// 'item' is used as an identifier (see Setp 5, line 6)
 								?>
-								<div class="team-pub__card-img">
-									<img src="<?php echo the_field('image'); ?>" alt=""></img>
+								<div class="team-pub__card-img"style="width: 100%;">
+									<img style="width: 100%;" src="<?php echo the_field('image'); ?>" alt=""></img>
 								</div>
 								<div class="team-pub__card-bottom-wrapper">
 									<p><?php echo the_field('full_name'); ?></p>

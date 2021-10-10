@@ -23,6 +23,7 @@ h1,
 .h1 {
 	font-size: var(--heading--font-size-h1);
 	letter-spacing: var(--heading--letter-spacing-h1);
+  font-family: var(--global--font-primary) !important;
 	line-height: var(--heading--line-height-h1);
 }
 
@@ -30,6 +31,7 @@ h2,
 .h2 {
 	font-size: var(--heading--font-size-h2);
 	letter-spacing: var(--heading--letter-spacing-h2);
+  font-family: var(--global--font-secondary) !important;
 	line-height: var(--heading--line-height-h2);
 }
 
@@ -62,4 +64,7 @@ h6,
 	font-weight: var(--heading--font-weight-strong);
 	letter-spacing: var(--heading--letter-spacing-h6);
 	line-height: var(--heading--line-height-h6);
+}
+p{
+  font-family: var(--global--font-primary) !important;
 }

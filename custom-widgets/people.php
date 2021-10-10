@@ -73,6 +73,7 @@ class MyPeople extends Widget_Base
 								<div class="people__post-name">
 									<?php echo get_field('full_name'); ?>
 								</div>
+								<div class="people_divider"></div>
 								<div class="people__post-title">
 									<?php echo get_field('title'); ?>
 								</div>
