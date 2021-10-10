@@ -6786,6 +6786,7 @@ h1.page-title {
 	.primary-navigation .primary-menu-container > ul > .menu-item > a {
 		padding-left: 30px;
 		padding-right: 30px;
+		text-decoration: none;
 	}
 
 	.primary-navigation .primary-menu-container > ul > .menu-item > a + .sub-menu-toggle {
@@ -6795,7 +6796,7 @@ h1.page-title {
 
 .primary-navigation a {
 	display: block;
-	font-family: "Fugue";
+	font-family: "Apercu Pro";
 	font-size: 1.125rem;
 	font-weight: normal;
 	padding: 30px 0;
@@ -8114,6 +8115,19 @@ footer {
 .team-pub__filter a.selected p {
 	color: #16eb96;
 	text-decoration: underline;
+}
+
+a {
+	outline: 0 !important;
+}
+
+object,
+embed {
+	outline: 0;
+}
+
+input::-moz-focus-inner {
+	border: 0;
 }
 
 .people {

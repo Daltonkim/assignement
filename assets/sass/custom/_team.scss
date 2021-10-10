@@ -146,3 +146,13 @@
     }
   }
 }
+
+a {
+  outline: 0 !important;
+}
+object, embed {
+  outline: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+}

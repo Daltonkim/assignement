@@ -246,7 +246,7 @@ Twenty Twenty-One is distributed under the terms of the GNU GPL.
   --branding--logo--max-height-mobile: 96px;
   /* Main navigation */
   --primary-nav--font-family: var(--global--font-secondary);
-  --primary-nav--font-family-mobile: var(--global--font-primary);
+  --primary-nav--font-family-mobile: var(--global--font-secondary);
   --primary-nav--font-size: var(--global--font-size-md);
   --primary-nav--font-size-sub-menu: var(--global--font-size-xs);
   --primary-nav--font-size-mobile: var(--global--font-size-sm);
@@ -4287,6 +4287,7 @@ h1.page-title {
   .primary-navigation .primary-menu-container > ul > .menu-item > a {
     padding-right: var(--primary-nav--padding);
     padding-left: var(--primary-nav--padding);
+    text-decoration: none;
   }
   .primary-navigation .primary-menu-container > ul > .menu-item > a + .sub-menu-toggle {
     margin-right: calc(5px - var(--primary-nav--padding));
@@ -5288,6 +5289,18 @@ footer {
 .team-pub__filter a.selected p {
   color: #16eb96;
   text-decoration: underline;
+}
+
+a {
+  outline: 0 !important;
+}
+
+object, embed {
+  outline: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
 }
 
 .people {
