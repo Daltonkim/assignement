@@ -23,9 +23,10 @@
       calc(0.5 * var(--button--padding-horizontal));
     font-size: var(--primary-nav--font-size-button);
     font-weight: var(--primary-nav--font-weight-button);
-    background-color: #1F1F1F;
+    background-color: transparent;
     border: none;
     color: var(--primary-nav--color-link);
+    box-shadow: none;
 
     .dropdown-icon {
       display: flex;

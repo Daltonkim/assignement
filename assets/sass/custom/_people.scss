@@ -219,16 +219,24 @@ button.slick-next.slick-arrow {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  transition: background-color .3s,
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+
+  @media only screen and (max-width: 1023px) {
+    right: 0;
+
+    svg {
+      width: 60px;
+    }
+  }
+
 }
 
 #lets_talk:hover {
   cursor: pointer;
-  > img svg{
+  > img svg {
     fill: #16eb96;
   }
 }

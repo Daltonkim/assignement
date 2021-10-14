@@ -4003,9 +4003,10 @@ h1.page-title {
   padding: calc(var(--button--padding-vertical) - 0.25 * var(--global--spacing-unit)) calc(0.5 * var(--button--padding-horizontal));
   font-size: var(--primary-nav--font-size-button);
   font-weight: var(--primary-nav--font-weight-button);
-  background-color: #1F1F1F;
+  background-color: transparent;
   border: none;
   color: var(--primary-nav--color-link);
+  box-shadow: none;
 }
 .menu-button-container #primary-mobile-menu .dropdown-icon {
   display: flex;
@@ -5536,6 +5537,14 @@ button.slick-next.slick-arrow {
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+}
+@media only screen and (max-width: 1023px) {
+  #lets_talk {
+    left: 0;
+  }
+  #lets_talk svg {
+    width: 60px;
+  }
 }
 
 #lets_talk:hover {
